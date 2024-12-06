@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting Program</title>
+</head>
+<body>
+    <h1>Welcome to the Greeting Program!</h1>
+    <h2>This page is built using HTML</h2>
+    <p>Please enter your name:</p>
+    <input type="text" id="nameInput" placeholder="Your Name">
+    <button onclick="greetUser()">Greet Me!</button>
+
+    <h2 id="greetingMessage"></h2>
+
+    <script>
+        function greetUser() {
+            // Get the input value
+            var name = document.getElementById('nameInput').value;
+            // Create a greeting message
+            var greeting = "Hello, " + name + "! Welcome to learning JavaScript.";
+            // Display the greeting message
+            document.getElementById('greetingMessage').innerText = greeting;
+        }
+    </script>
+</body>
+</html>
