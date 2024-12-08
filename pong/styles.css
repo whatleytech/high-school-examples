@@ -1,0 +1,29 @@
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  position: relative; /* To position scoreBoard and instructions */
+}
+
+#gameCanvas {
+  border: 2px solid #fff;
+  background-color: #111;
+}
+
+#scoreBoard {
+  position: absolute;
+  top: 20px;
+  font-size: 24px;
+}
+
+#instructions {
+  position: absolute;
+  bottom: 20px;
+  font-size: 16px;
+  color: #ccc;
+}
